@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Memes from '../views/Memes.vue'
+import About from '../views/About.vue'
 
 Vue.use(VueRouter)
 
@@ -11,16 +13,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/contact',
-    name: 'Contact',
-    component: () =>
-      import('../views/Contact.vue')
+    path: '/memes/',
+    name: 'Memes',
+    component: Memes
   },
   {
-    path: '/about',
+    path: '/about/:param?',
     name: 'About',
-    component: () =>
-      import('../views/About.vue')
+    component: About
   }
 ]
 

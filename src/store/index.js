@@ -4,8 +4,14 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    amount: 10,
+  },
+  mutations: {
+    setAmount(state, amount) {
+      state.amount = amount
+    }
+  },
   actions: {},
   modules: {},
 });
