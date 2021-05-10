@@ -13,22 +13,26 @@
     </div>
     <div>
       <h2>Have you heard of Chuck Norris?</h2>
-    <b-button v-b-modal.modal-1 @click="fetchJoke"
-      >Click me to get a quote from Mr. Chuck Norris</b-button
-    >
-    <p>Or type in a word in the addressfield</p>
-    <b-modal id="modal-1" title="Chuck Norris ">
-      <b-icon icon="emoji-laughing"></b-icon>
-      <p class="my-4">
-        {{ joke }}</p>
-    </b-modal>
-    <p v-if="paramJoke !== null && paramJoke.total > 0">
-      {{ paramJoke.result[0].value }}
-    </p>
+      <b-button id="b-button" v-b-modal.modal-1 @click="fetchJoke"
+        >Click to get legit facts from Mr. Chuck Norris</b-button
+      >
+      <p>Or type in a word in the addressfield <br>
+      e.g. "program".</p>
+      <b-modal id="modal-1" title="Chuck Norris ">
+        <b-icon icon="emoji-laughing"></b-icon>
+        <p class="my-4">
+          {{ joke }}
+        </p>
+      </b-modal>
+      <p v-if="paramJoke !== null && paramJoke.total > 0">
+        {{ paramJoke.result[0].value }}
+      </p>
     </div>
     <footer>
-      <p>Source <a href="https://api.chucknorris.io/">Chuck Norris</a></p>
-      
+      <p>
+        Source <a href="https://api.chucknorris.io/">Chuck Norris</a> &
+        <a href="https://sv.wikipedia.org/wiki/Meme">Wikipedia</a>
+      </p>
     </footer>
   </div>
 </template>

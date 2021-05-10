@@ -1,7 +1,51 @@
 $theme-colors: (
-  'primary': #b4654a,
-  'secondary': #157a6e
+  'primary': rgb(58, 64, 90),
+  'secondary': rgb(131, 151, 136),
+  'third': rgb(225, 221, 236),
+  'fourth': rgb(183, 109, 104)
 );
+$border-color: map-get($theme-colors, primary);
+$body-color: rgb(131, 151, 136);
+
+
+#app {
+  border: solid 5px map-get($theme-colors, primary);
+  background-color: map-get($theme-colors, secondary);
+  padding: 30px;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: map-get($theme-colors, primary);
+}
+#nav a {
+  font-weight: bold;
+  color: map-get($theme-colors, primary);
+}
+#nav a.router-link-exact-active {
+  color: map-get($theme-colors, fourth);
+}
+body {
+  background-color: $body-color;
+}
+
+h1 {
+  color: map-get($theme-colors, fourth);
+}
+ p a {
+  color: map-get($theme-colors, fourth);
+}
+#b-button {
+  background-color: map-get($theme-colors, third)
+}
+#b-form {
+  background-color: map-get($theme-colors, third)
+}
+#numberInput {
+  margin: auto;
+
+}
+
 // Sass imports (The variables need to be set prior to importing)
 @import 'bootstrap';
 @import 'bootstrap-vue';

@@ -2,11 +2,11 @@
   <div>
     <span>Select the quantity of memes to be shown:</span>
     <form>
-      <b-form-input v-model="amount" type="range" min="1" max="100"
+      <b-form-input id="b-form" v-model="amount" type="range" min="1" max="100"
         >$store.state.amount</b-form-input
       >
       <br />
-      <b-col sm="1" class="numberInput">
+      <b-col sm="2" id="numberInput">
         <b-form-input
           type="number"
           min="1"
@@ -16,8 +16,11 @@
         ></b-form-input>
 
         <b-button
-          variant="outline-primary"
+          id="b-button"
+          variant="light"
           type="button"
+          size="sm"
+          
           @click="$store.commit('setAmount', amount)"
           >Render</b-button
         >
@@ -74,10 +77,8 @@
 </script>
 
 <style scoped>
-  img {
+  /* img {
     border: 5px solid #555;
-  }
-  .numberInput {
-    margin: auto;
-  }
+  } */
+  
 </style>

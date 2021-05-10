@@ -1,11 +1,11 @@
 module.exports = {
   lintOnSave: false,
-  devServer: {
-    host: 'localhost'
-  },
+  // devServer: {
+  //   host: 'localhost'
+  // },
   pwa: {
     manifestOptions: {
-      background_color: 'lightgrey'
+      background_color: '$secondary'
     },
     name: 'Meme templates',
     themeColor: 'steelblue'
