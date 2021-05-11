@@ -53,7 +53,6 @@
 
     created() {
       this.fetchMemes()
-      console.log(this.$store.state.amount)
     },
     computed: {
       get() {

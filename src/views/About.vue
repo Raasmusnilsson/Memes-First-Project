@@ -19,7 +19,7 @@
       <p>
         Or type in a word in the addressfield after /about
         <br />
-        e.g. "program".
+        e.g. "/program".
       </p>
       <b-modal id="modal-1" title="Chuck Norris ">
         <b-icon icon="emoji-laughing"></b-icon>

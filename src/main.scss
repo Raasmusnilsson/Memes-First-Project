@@ -52,6 +52,5 @@ img {
   border: 2px solid map-get($theme-colors, primary);
 }
 
-// Sass imports (The variables need to be set prior to importing)
 @import 'bootstrap';
 @import 'bootstrap-vue';
