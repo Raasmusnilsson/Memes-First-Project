@@ -20,7 +20,6 @@
           variant="light"
           type="button"
           size="sm"
-          
           @click="$store.commit('setAmount', amount)"
           >Render</b-button
         >
@@ -75,10 +74,3 @@
     }
   }
 </script>
-
-<style scoped>
-  /* img {
-    border: 5px solid #555;
-  } */
-  
-</style>

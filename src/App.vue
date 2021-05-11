@@ -1,7 +1,11 @@
 <template>
   <body>
-    <p v-if="isOnline">Internet <b-icon icon="bar-chart-fill" variant="success"></b-icon></p>
-    <p v-if="isOffline">No Internet <b-icon icon="bar-chart-fill" variant="danger"></b-icon></p>
+    <p id="p-internet" v-if="isOnline">
+      Internet <b-icon icon="bar-chart-fill" variant="success"></b-icon>
+    </p>
+    <p id="p-internet" v-if="isOffline">
+      No Internet <b-icon icon="bar-chart-fill" variant="danger"></b-icon>
+    </p>
     <div id="app">
       <div id="nav">
         <router-link to="/">Home</router-link> |
@@ -12,4 +16,3 @@
     </div>
   </body>
 </template>
-

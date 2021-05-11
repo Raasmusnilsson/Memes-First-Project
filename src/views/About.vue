@@ -3,7 +3,7 @@
     <div>
       <h1>About memes</h1>
       <br />
-      <p>
+      <p id="p-about">
         A meme is a cultural item that is transmitted by repetition and
         replication in a manner analogous to the biological transmission of
         genes.
@@ -14,17 +14,20 @@
     <div>
       <h2>Have you heard of Chuck Norris?</h2>
       <b-button id="b-button" v-b-modal.modal-1 @click="fetchJoke"
-        >Click to get legit facts from Mr. Chuck Norris</b-button
+        >Click to get <strong>legit</strong> facts about Mr. Chuck Norris</b-button
       >
-      <p>Or type in a word in the addressfield <br>
-      e.g. "program".</p>
+      <p>
+        Or type in a word in the addressfield after /about
+        <br />
+        e.g. "program".
+      </p>
       <b-modal id="modal-1" title="Chuck Norris ">
         <b-icon icon="emoji-laughing"></b-icon>
         <p class="my-4">
           {{ joke }}
         </p>
       </b-modal>
-      <p v-if="paramJoke !== null && paramJoke.total > 0">
+      <p id="p-about" v-if="paramJoke !== null && paramJoke.total > 0">
         {{ paramJoke.result[0].value }}
       </p>
     </div>

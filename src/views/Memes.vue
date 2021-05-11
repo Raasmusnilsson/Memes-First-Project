@@ -4,7 +4,6 @@
     <memesList :height="380" :width="450" />
     <footer>
       <p>Source <a href="https://api.imgflip.com">img flip</a></p>
-      
     </footer>
   </div>
 </template>
