@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Meme logo" src="../assets/meme-logo.png" />
-    <HelloWorld msg="Classic memes images" />
+    <HelloWorld msg="Classic Meme Images" />
     <Greet />
   </div>
 </template>

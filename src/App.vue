@@ -1,11 +1,6 @@
 <template>
   <body>
-    <p id="p-internet" v-if="isOnline">
-      Online <b-icon icon="bar-chart-fill" variant="success"></b-icon>
-    </p>
-    <p id="p-internet" v-if="isOffline">
-      Offline <b-icon icon="bar-chart-fill" variant="danger"></b-icon>
-    </p>
+    <connection></connection>
     <div id="app">
       <div id="nav">
         <router-link to="/">Home</router-link> |
@@ -16,3 +11,14 @@
     </div>
   </body>
 </template>
+
+<script>
+import Connection from '@/components/Connection.vue'
+
+export default {
+  name: 'App',
+  components: {
+    Connection
+  }
+}
+</script>

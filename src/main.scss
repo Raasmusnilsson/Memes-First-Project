@@ -33,8 +33,10 @@ h1 {
 p a {
   color: map-get($theme-colors, fourth);
 }
+
 #b-button {
   background-color: map-get($theme-colors, third);
+  color: map-get($theme-colors, primary) ;
 }
 #b-form {
   background-color: map-get($theme-colors, third);
@@ -45,9 +47,19 @@ p a {
 #p-internet {
   color: map-get($theme-colors, third);
 }
-img {
-  border: 5px solid map-get($theme-colors, primary) !important;
+.home-input {
+  background-color: map-get($theme-colors, third);
+  color: map-get($theme-colors, primary) ;
 }
+li {
+  display: block;
+  margin: 0 auto;
+
+}
+img {
+  border: 3px solid map-get($theme-colors, primary) !important;
+}
+
 #p-about {
   border: 2px solid map-get($theme-colors, primary);
 }

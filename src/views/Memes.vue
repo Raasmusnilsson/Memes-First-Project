@@ -9,7 +9,6 @@
 </template>
 
 <script>
-  // @ is an alias to /src
   import MemesList from '../components/MemesList.vue'
 
   export default {

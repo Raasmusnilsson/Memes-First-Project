@@ -2,8 +2,13 @@
   <div>
     <span>Select the quantity of memes to be shown:</span>
     <form>
-      <b-form-input id="b-form" v-model="amount" type="range" min="1" max="100"
-        >$store.state.amount</b-form-input
+      <b-form-input
+        id="b-form"
+        v-model="amount"
+        type="range"
+        min="1"
+        max="100"
+        >{{ $store.state.amount }}</b-form-input
       >
       <br />
       <b-col sm="2" id="numberInput">
@@ -30,7 +35,7 @@
       <li v-for="meme in memes.slice(0, $store.state.amount)" :key="meme.id">
         <br />
         <h2>{{ meme.name }}</h2>
-        <img :src="meme.url" :height="height" :width="width" />
+        <img id="img-meme" :src="meme.url" :height="height" :width="width" />
       </li>
     </ul>
   </div>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <form>
-      <input type="text" placeholder="Enter name to" v-model="userName" />
-      <input type="button" value="Get a greeting" @click="getGreeting" />
+      <input class="home-input" type="text" placeholder="Enter name to" v-model="userName" />
+      <input class="home-input" type="button" value="Get a greeting" @click="getGreeting" />
     </form>
     <p v-if="hasUserInput">
       Hey {{ userName }}! Continue to the <router-link to="/memes">Memes</router-link> page to see more.
