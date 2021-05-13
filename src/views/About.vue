@@ -11,10 +11,15 @@
         spread via the internet and often altered in a creative or humorous way.
       </p>
     </div>
-    <div>
+    <adult-age
+      @adult-age="onAdultAge"
+      v-if="overEighteen === false"
+    ></adult-age>
+    <div v-if="overEighteen === true">
       <h2>Have you heard of Chuck Norris?</h2>
       <b-button id="b-button" v-b-modal.modal-1 @click="fetchJoke"
-        >Click to get <strong>legit</strong> facts about Mr. Chuck Norris</b-button
+        >Click to get <strong>legit</strong> facts about Mr. Chuck
+        Norris</b-button
       >
       <p>
         Or type in a word in the addressfield after /about
@@ -41,11 +46,14 @@
 </template>
 
 <script>
+  import AdultAge from '../components/AdultAge.vue'
   export default {
+    components: { AdultAge },
     data() {
       return {
         joke: null,
-        paramJoke: null
+        paramJoke: null,
+        overEighteen: false
       }
     },
 
@@ -72,6 +80,9 @@
           .then((result) => {
             this.paramJoke = result
           })
+      },
+      onAdultAge(adultAge) {
+        this.overEighteen = adultAge
       }
     },
 

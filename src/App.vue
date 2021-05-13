@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import Connection from '@/components/Connection.vue'
+  import Connection from '@/components/Connection.vue'
 
-export default {
-  name: 'App',
-  components: {
-    Connection
+  export default {
+    name: 'App',
+    components: {
+      Connection
+    }
   }
-}
 </script>
